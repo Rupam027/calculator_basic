@@ -1,0 +1,204 @@
+
+
+var n="";
+var op="";
+
+function nine(){
+n=n+document.getElementById("9").innerHTML;
+document.getElementById("field").innerHTML=n;
+}
+
+
+function seven(){
+
+n=n+document.getElementById("7").innerHTML;
+document.getElementById("field").innerHTML=n;
+
+}
+
+function eight(){
+
+n=n+document.getElementById("8").innerHTML;
+document.getElementById("field").innerHTML=n;
+
+}
+
+function six(){
+
+n=n+document.getElementById("6").innerHTML;
+document.getElementById("field").innerHTML=n;
+}
+
+function five(){
+n=n+document.getElementById("5").innerHTML;
+document.getElementById("field").innerHTML=n;
+}
+
+function four(){
+n=n+document.getElementById("4").innerHTML;
+document.getElementById("field").innerHTML=n;
+
+
+}
+
+function three(){
+n=n+document.getElementById("3").innerHTML;
+document.getElementById("field").innerHTML=n;
+
+
+}
+function two(){
+n=n+document.getElementById("2").innerHTML;
+document.getElementById("field").innerHTML=n;
+}
+function one(){
+n=n+document.getElementById("1").innerHTML;
+document.getElementById("field").innerHTML=n;
+
+
+}
+function zero(){
+n=n+document.getElementById("0").innerHTML;
+document.getElementById("field").innerHTML=n;
+}
+
+function plus(){
+n=n+document.getElementById("+").innerHTML;
+op=document.getElementById("+").innerHTML;
+document.getElementById("field").innerHTML=n;
+
+}
+
+function minus(){
+n=n+document.getElementById("-").innerHTML;
+op=document.getElementById("-").innerHTML;
+document.getElementById("field").innerHTML=n;
+}
+function multiply(){
+n=n+document.getElementById("*").innerHTML;
+op=document.getElementById("*").innerHTML;
+document.getElementById("field").innerHTML=n;
+}
+function divide(){
+n=n+document.getElementById("/").innerHTML;
+op=document.getElementById("/").innerHTML;
+document.getElementById("field").innerHTML=n;
+}
+
+function answer(){
+
+n=n.toString();
+l=n.length;
+
+
+
+if(n[l-1]==op){
+
+document.getElementById("field").style.color="red";
+document.getElementById("field").innerHTML="SYNTAX ERROR";
+n="0";
+}
+else{
+
+
+if(op!=""){
+
+
+var a=n.split(op);
+
+
+var n1=Number(a[0]);
+var n2=Number(a[1]);
+var res=0;
+
+
+
+if(op=='+')
+res=n1+n2;
+if(op=='-')
+res=n1-n2;
+if(op=='X')
+res=n1*n2;
+if(op=='/'){
+if(n2==0){
+document.getElementById("field").style.color="red";
+document.getElementById("field").innerHTML="MATH ERROR";
+n="0";
+return;
+}
+else
+res=n1/n2;
+}
+}
+else
+res=n;
+
+document.getElementById("field").innerHTML=res;
+n=res.toString();
+}
+
+}
+
+function clr(){
+
+
+document.location.reload(true);
+}
+
+
+
+
+function point(){
+n=n+document.getElementById(".").innerHTML;
+document.getElementById("field").innerHTML=n;
+
+}
+
+function back(){
+
+l=n.length;
+if(l<=1)
+clr();
+
+
+n=n.slice(0,l-1);
+
+
+document.getElementById("field").innerHTML=n;
+
+}
+
+
+
+function percent(){
+
+if(n!=""){
+var a=Number(n);
+document.getElementById("field").innerHTML=a/100;
+a=a/100;
+n=a.toString();
+}
+else{
+document.getElementById("field").style.color="red";
+document.getElementById("field").innerHTML="SYNTAX ERROR";
+
+}
+
+
+}
+
+function root(){
+
+if(n!=""){
+var a=Number(n);
+document.getElementById("field").innerHTML=Math.sqrt(a);
+a=Math.sqrt(a);
+n=a.toString();
+}
+else{
+document.getElementById("field").style.color="red";
+document.getElementById("field").innerHTML="SYNTAX ERROR";
+
+}
+
+}
