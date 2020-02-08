@@ -3,14 +3,16 @@
 var n="";
 var op="";
 
+
+
 function nine(){
 n=n+document.getElementById("9").innerHTML;
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 
 }
@@ -22,10 +24,10 @@ n=n+document.getElementById("7").innerHTML;
 document.getElementById("field").innerHTML=n;
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 
 
@@ -38,10 +40,10 @@ n=n+document.getElementById("8").innerHTML;
 document.getElementById("field").innerHTML=n;
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 
 
@@ -53,10 +55,10 @@ n=n+document.getElementById("6").innerHTML;
 document.getElementById("field").innerHTML=n;
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 
 }
@@ -66,10 +68,10 @@ n=n+document.getElementById("5").innerHTML;
 document.getElementById("field").innerHTML=n;
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 
 }
@@ -79,10 +81,10 @@ n=n+document.getElementById("4").innerHTML;
 document.getElementById("field").innerHTML=n;
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 
 
@@ -94,10 +96,10 @@ n=n+document.getElementById("3").innerHTML;
 document.getElementById("field").innerHTML=n;
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 
 
@@ -108,10 +110,10 @@ n=n+document.getElementById("2").innerHTML;
 document.getElementById("field").innerHTML=n;
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 
 }
@@ -122,10 +124,10 @@ n=n+document.getElementById("1").innerHTML;
 document.getElementById("field").innerHTML=n;
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 }
 
@@ -135,10 +137,10 @@ n=n+document.getElementById("0").innerHTML;
 document.getElementById("field").innerHTML=n;
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 
 }
@@ -149,10 +151,10 @@ op=document.getElementById("+").innerHTML;
 document.getElementById("field").innerHTML=n;
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 
 
@@ -164,10 +166,10 @@ op=document.getElementById("-").innerHTML;
 document.getElementById("field").innerHTML=n;
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 
 }
@@ -177,10 +179,10 @@ op=document.getElementById("*").innerHTML;
 document.getElementById("field").innerHTML=n;
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 
 }
@@ -190,10 +192,10 @@ op=document.getElementById("/").innerHTML;
 document.getElementById("field").innerHTML=n;
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 
 }
@@ -246,10 +248,10 @@ res=n1/n2;
 else{
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 res=n;
 else
-res=s.slice(l-26,l);
+res=s.slice(l-25,l);
 
 
 }
@@ -274,10 +276,10 @@ n=n+document.getElementById(".").innerHTML;
 document.getElementById("field").innerHTML=n;
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 
 
@@ -293,10 +295,10 @@ clr();
 n=n.slice(0,l-1);
 var l=n.length;
 var s=n;
-if(l<27)
+if(l<26)
 document.getElementById("field").innerHTML=n;
 else
-document.getElementById("field").innerHTML=s.slice(l-26,l);
+document.getElementById("field").innerHTML=s.slice(l-25,l);
 
 
 }

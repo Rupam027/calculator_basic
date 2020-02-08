@@ -243,8 +243,16 @@ else
 res=n1/n2;
 }
 }
-else
+else{
+var l=n.length;
+var s=n;
+if(l<27)
 res=n;
+else
+res=s.slice(l-26,l);
+
+
+}
 
 document.getElementById("field").innerHTML=res;
 n=res.toString();
