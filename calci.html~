@@ -4,7 +4,6 @@
 <meta charset="utf-18"/>
 <title> Calculater </title>
 <link rel="stylesheet" href="bootstrap.css"/>
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/segment7" type="text/css"/> 
 <script src="calci.js"></script>
 </head>
 <body >
@@ -14,7 +13,7 @@
 <hr>
 <div style="margin:auto; width:700px;  background-color:yellow;  ">
 
-<span id="field" style="font-size: 50px; height:100px; font-family: Segment7Standard;">0</span>
+<span id="field" style="font-size: 50px; height:100px;">0</span>
 
 
 

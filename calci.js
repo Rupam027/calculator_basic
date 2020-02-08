@@ -5,7 +5,14 @@ var op="";
 
 function nine(){
 n=n+document.getElementById("9").innerHTML;
+var l=n.length;
+var s=n;
+if(l<27)
 document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
+
+
 }
 
 
@@ -13,6 +20,15 @@ function seven(){
 
 n=n+document.getElementById("7").innerHTML;
 document.getElementById("field").innerHTML=n;
+var l=n.length;
+var s=n;
+if(l<27)
+document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
+
+
+
 
 }
 
@@ -20,6 +36,14 @@ function eight(){
 
 n=n+document.getElementById("8").innerHTML;
 document.getElementById("field").innerHTML=n;
+var l=n.length;
+var s=n;
+if(l<27)
+document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
+
+
 
 }
 
@@ -27,16 +51,40 @@ function six(){
 
 n=n+document.getElementById("6").innerHTML;
 document.getElementById("field").innerHTML=n;
+var l=n.length;
+var s=n;
+if(l<27)
+document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
+
+
 }
 
 function five(){
 n=n+document.getElementById("5").innerHTML;
 document.getElementById("field").innerHTML=n;
+var l=n.length;
+var s=n;
+if(l<27)
+document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
+
+
 }
 
 function four(){
 n=n+document.getElementById("4").innerHTML;
 document.getElementById("field").innerHTML=n;
+var l=n.length;
+var s=n;
+if(l<27)
+document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
+
+
 
 
 }
@@ -44,28 +92,67 @@ document.getElementById("field").innerHTML=n;
 function three(){
 n=n+document.getElementById("3").innerHTML;
 document.getElementById("field").innerHTML=n;
+var l=n.length;
+var s=n;
+if(l<27)
+document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
+
+
 
 
 }
 function two(){
-n=n+document.getElementById("2").innerHTML;
+var n=n+document.getElementById("2").innerHTML;
 document.getElementById("field").innerHTML=n;
+var l=n.length;
+var s=n;
+if(l<27)
+document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
+
+
 }
 function one(){
 n=n+document.getElementById("1").innerHTML;
 document.getElementById("field").innerHTML=n;
-
+var l=n.length;
+var s=n;
+if(l<27)
+document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
 
 }
+
+
 function zero(){
 n=n+document.getElementById("0").innerHTML;
 document.getElementById("field").innerHTML=n;
+var l=n.length;
+var s=n;
+if(l<27)
+document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
+
+
 }
 
 function plus(){
 n=n+document.getElementById("+").innerHTML;
 op=document.getElementById("+").innerHTML;
 document.getElementById("field").innerHTML=n;
+var l=n.length;
+var s=n;
+if(l<27)
+document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
+
+
 
 }
 
@@ -73,16 +160,40 @@ function minus(){
 n=n+document.getElementById("-").innerHTML;
 op=document.getElementById("-").innerHTML;
 document.getElementById("field").innerHTML=n;
+var l=n.length;
+var s=n;
+if(l<27)
+document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
+
+
 }
 function multiply(){
 n=n+document.getElementById("*").innerHTML;
 op=document.getElementById("*").innerHTML;
 document.getElementById("field").innerHTML=n;
+var l=n.length;
+var s=n;
+if(l<27)
+document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
+
+
 }
 function divide(){
 n=n+document.getElementById("/").innerHTML;
 op=document.getElementById("/").innerHTML;
 document.getElementById("field").innerHTML=n;
+var l=n.length;
+var s=n;
+if(l<27)
+document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
+
+
 }
 
 function answer(){
@@ -151,6 +262,14 @@ document.location.reload(true);
 function point(){
 n=n+document.getElementById(".").innerHTML;
 document.getElementById("field").innerHTML=n;
+var l=n.length;
+var s=n;
+if(l<27)
+document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
+
+
 
 }
 
@@ -162,9 +281,13 @@ clr();
 
 
 n=n.slice(0,l-1);
-
-
+var l=n.length;
+var s=n;
+if(l<27)
 document.getElementById("field").innerHTML=n;
+else
+document.getElementById("field").innerHTML=s.slice(l-26,l);
+
 
 }
 
