@@ -104,7 +104,7 @@ document.getElementById("field").innerHTML=s.slice(l-26,l);
 
 }
 function two(){
-var n=n+document.getElementById("2").innerHTML;
+n=n+document.getElementById("2").innerHTML;
 document.getElementById("field").innerHTML=n;
 var l=n.length;
 var s=n;
@@ -115,6 +115,8 @@ document.getElementById("field").innerHTML=s.slice(l-26,l);
 
 
 }
+
+
 function one(){
 n=n+document.getElementById("1").innerHTML;
 document.getElementById("field").innerHTML=n;
